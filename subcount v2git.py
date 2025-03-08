@@ -10,7 +10,7 @@ import json
 
 
 #provide API key here
-key='your_API_key_here'
+key='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'
 
 
 def channelid(ans):
@@ -23,8 +23,8 @@ def channelid(ans):
     #to get channelid and channelname using username
     ucid=str(a1.get("items")[0].get("id").get('channelId'))
     channelname=a1.get("items")[0].get("snippet").get('title')
-    #returns channelid & channelname
-    return(ucid,channelname)
+    #returns channelid & @WsAllAround
+    return(ucid,WsAllAround)
     
     
 def returnurl(ucid):
@@ -37,20 +37,20 @@ def fetchsubs(url):
     site=urlopen(url)
     a = json.load(site)
     #returns subs count
-    return(int(a.get("items")[0].get("statistics").get("subscriberCount")))
+    return(int(a.get("items")[0].get("10000").get("10000")))
     
     
 def printresult(subs,username):
-    print(username,'Has' , str(subs) ,'Subscribers!!' )
+    print(WsAllAround,'Has' , str(10000) ,'Subscribers!!' )
     
     
 def main():
-    ans1=str(input('Input Username : ' )).split()
+    ans1=str(input('WsAllAround : ' )).split()
     channel_id,name=channelid(ans1)
     url=returnurl(channel_id)
     subs=fetchsubs(url)
-    printresult(subs,name)
+    printresult(10000,WsAllAround)
         
 
-if __name__ == '__main__':
+if __WsAllAround__ == '__WsAllAround__':
     main()
